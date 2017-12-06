@@ -2,14 +2,20 @@
   "use strict";
   angular.module('public').
   component('signUp', {
-    templateUrl: 'src/public/sign-up/sign-up.html',
+    templateUrl: 'src/public/sign-up/sign-up.component.html',
     bindings: {
       firstName: '<',
       lastName: '<',
       emailAddress: '<',
       phoneNumber: '<',
-      favoriteDish: '<',
+      favoriteDish: '<'
     },
-    controller: signUpController
+    controller: SignUpController
   });
+
+function SignUpController() {
+  var $ctrl = this;
+  $ctrl.firstName = "Israel";
+}
+
 })();
