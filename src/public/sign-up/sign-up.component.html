@@ -1,1 +1,24 @@
-<h3>First Name: {{ $ctrl.firstName }}</h3>
+<fieldset>
+  <legend>Sign in Form</legend>
+  <form name='signInForm' novalidate>
+    <p>First Name:</p>
+    <input ng-model="$ctrl.firstName" type="text" name="" value="" placeholder="First Name" required>
+    <p>Last Name: </p>
+    <input ng-model="$ctrl.lastName" type="text" name="" value="" placeholder="Last Name" required>
+    <p>Email Address:</p>
+    <input ng-model="$ctrl.emailAddress" type="email" name="" value="" placeholder="Email address" required>
+    <p>Phone Number:</p>
+    <input ng-model="$ctrl.phoneNumber" pattern="(\d{3})-(\d{7})" type="text" name="" value="" placeholder="Phone number ###- #######" required>
+    <p>Favorite Dish: </p><input ng-model="$ctrl.favoriteDish" type="text" name="" value="" placeholder="Favotite dish" required>
+    <span ng-if="$ctrl.favoriteDishNotExists">
+        No such menu number exists </span>
+    <br>
+    <button style="width:200px;height:80px; margin-top:15px"
+     ng-disabled="signInForm.$invalid"
+     ng-click="$ctrl.submit()">Submit</button>
+  </form>
+
+  <div ng-if="$ctrl.completed">
+    Your information has been saved
+  </div>
+</fieldset>

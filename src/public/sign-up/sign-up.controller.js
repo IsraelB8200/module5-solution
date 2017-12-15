@@ -5,7 +5,7 @@
   controller('SignUpController', SignUpController);
 
   function SignUpController() {
-    var $ctrl = this;
-    $ctrl.firstName = 'Israel Israel';
+    var ctrl = this;
+
   }
 })();

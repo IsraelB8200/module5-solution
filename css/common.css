@@ -18,3 +18,29 @@
 .ui-view-placeholder {
     margin-top: 60px;
 }
+
+form > input, button {
+  color:black;
+  font-weight: bold;
+}
+
+fieldset > legend {
+  color:white;
+}
+
+.ng-touched.ng-valid {
+  border: 3px green solid;
+}
+
+.ng-touched.ng-invalid {
+  border: 3px red solid;
+}
+
+button.disabled {
+  color: gray;
+}
+
+button:enabled {
+  font-size: 30px;
+  color: green;
+}
