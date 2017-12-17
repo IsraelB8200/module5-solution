@@ -8,7 +8,7 @@
     <p>Email Address:</p>
     <input ng-model="$ctrl.emailAddress" type="email" name="" value="" placeholder="Email address" required>
     <p>Phone Number:</p>
-    <input ng-model="$ctrl.phoneNumber" pattern="(\d{3})-(\d{4})-(\d{4})" type="text" name="" value="" placeholder="###-####-###" required>
+    <input ng-model="$ctrl.phoneNumber" pattern="(\d{3})-(\d{3})-(\d{4})" type="text" name="" value="" placeholder="###-###-####" required>
     <p>Favorite Dish: </p><input ng-model="$ctrl.favoriteDish" type="text" name="" value="" placeholder="Favotite dish" required>
     <span ng-if="$ctrl.favoriteDishNotExists">
         No such menu number exists </span>
